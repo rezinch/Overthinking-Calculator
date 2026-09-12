@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500;700;800&family=Inter:wght@400;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+/* ============================================================
+   OVERTHINKING CALCULATOR — Neo-Brutalist Aesthetic
+   Bold, high-contrast, hard offset shadows, spacious layout.
+   ============================================================ */
+
+@theme {
+  --color-bg-primary: #0a0b0e;
+  --color-bg-secondary: #12141a;
+  --color-bg-card: #161922;
+
+  --color-accent-cyan: #00f0ff;
+  --color-accent-yellow: #ffe600;
+  --color-accent-pink: #ff2a85;
+  --color-accent-green: #00ff66;
+  --color-accent-red: #ff3344;
+
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #a1a1aa;
+  --color-text-muted: #71717a;
+
+  --color-border-brutal: #ffffff;
+  --color-border-dark: #27272a;
+
+  --font-sans: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+/* ---- Base ---- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* ---- Neo-Brutalist Grid Pattern ---- */
+.brutal-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+/* ---- Neo-Brutalist Panel ---- */
+.brutal-panel {
+  background: var(--color-bg-card);
+  border: 2px solid #ffffff;
+  box-shadow: 6px 6px 0px #00f0ff;
+  border-radius: 0px;
+}
+
+.brutal-panel-yellow {
+  background: var(--color-bg-card);
+  border: 2px solid #ffffff;
+  box-shadow: 6px 6px 0px #ffe600;
+  border-radius: 0px;
+}
+
+.brutal-panel-pink {
+  background: var(--color-bg-card);
+  border: 2px solid #ffffff;
+  box-shadow: 6px 6px 0px #ff2a85;
+  border-radius: 0px;
+}
+
+.brutal-panel-red {
+  background: var(--color-bg-card);
+  border: 2px solid #ffffff;
+  box-shadow: 6px 6px 0px #ff3344;
+  border-radius: 0px;
+}
+
+.brutal-panel-green {
+  background: var(--color-bg-card);
+  border: 2px solid #ffffff;
+  box-shadow: 6px 6px 0px #00ff66;
+  border-radius: 0px;
+}
+
+/* ---- Neo-Brutalist Header Bar ---- */
+.brutal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background: #000000;
+  border-bottom: 2px solid #ffffff;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* ---- Neo-Brutalist Buttons ---- */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 28px;
+  background: #00f0ff;
+  color: #000000;
+  font-family: var(--font-mono);
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 2px solid #ffffff;
+  box-shadow: 6px 6px 0px #ffffff;
+  border-radius: 0px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.btn-primary:hover {
+  background: #ffe600;
+  box-shadow: 8px 8px 0px #ffffff;
+  transform: translate(-2px, -2px);
+}
+
+.btn-primary:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0px 0px 0px #ffffff;
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 28px;
+  background: #161922;
+  color: #ffffff;
+  font-family: var(--font-mono);
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 2px solid #ffffff;
+  box-shadow: 6px 6px 0px #00f0ff;
+  border-radius: 0px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.btn-secondary:hover {
+  background: #27272a;
+  box-shadow: 8px 8px 0px #00f0ff;
+  transform: translate(-2px, -2px);
+}
+
+.btn-secondary:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0px 0px 0px #00f0ff;
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 18px;
+  background: transparent;
+  color: var(--color-text-secondary);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  border: 2px solid transparent;
+  border-radius: 0px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.btn-ghost:hover {
+  color: #ffffff;
+  border-color: #ffffff;
+  background: #12141a;
+}
+
+/* ---- Input Fields ---- */
+.input-field {
+  width: 100%;
+  padding: 14px 18px;
+  background: #0a0b0e;
+  border: 2px solid #ffffff;
+  border-radius: 0px;
+  color: #ffffff;
+  font-family: var(--font-mono);
+  font-size: 15px;
+  outline: none;
+  transition: box-shadow 0.1s ease;
+}
+
+.input-field:focus {
+  box-shadow: 4px 4px 0px #00f0ff;
+}
+
+.input-field::placeholder {
+  color: var(--color-text-muted);
+}
+
+textarea.input-field {
+  resize: vertical;
+  min-height: 120px;
+  line-height: 1.6;
+}
+
+/* ---- Neo-Brutalist Chips ---- */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 18px;
+  background: #0a0b0e;
+  border: 2px solid var(--color-border-dark);
+  border-radius: 0px;
+  color: var(--color-text-secondary);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.chip:hover {
+  border-color: #ffffff;
+  color: #ffffff;
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0px #ffffff;
+}
+
+.chip.active {
+  border-color: #ffffff;
+  color: #000000;
+  background: #00f0ff;
+  box-shadow: 4px 4px 0px #ffffff;
+}
+
+/* ---- Neo-Brutalist Meters ---- */
+.meter-bg {
+  height: 12px;
+  background: #000000;
+  border: 2px solid #ffffff;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.meter-fill {
+  height: 100%;
+  background: #00f0ff;
+  transition: width 0.4s ease;
+}
+
+/* ---- Brutalist Badges ---- */
+.badge-brutal {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 800;
+  padding: 4px 10px;
+  border: 2px solid #ffffff;
+  border-radius: 0px;
+  text-transform: uppercase;
+  box-shadow: 2px 2px 0px #ffffff;
+}
+
+.badge-cyan {
+  background: #00f0ff;
+  color: #000000;
+}
+
+.badge-yellow {
+  background: #ffe600;
+  color: #000000;
+}
+
+.badge-red {
+  background: #ff3344;
+  color: #ffffff;
+}
+
+.badge-green {
+  background: #00ff66;
+  color: #000000;
+}
+
+/* ---- Monospace & Typography Utilities ---- */
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+/* ---- Scrollbar ---- */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border: 2px solid #0a0b0e;
+}
