@@ -53,7 +53,23 @@ For Software:
 *The Results Dashboard displaying the Overthinking Index, Verdict, and generated Alternate Universes.*
 
 # Diagrams
-![Workflow](https://via.placeholder.com/800x400.png?text=Overthinking+Calculator+Architecture)
+```mermaid
+graph TD
+    A[User Input: Message] --> B[Form: Forensic Telemetry]
+    B --> C{Analysis Orchestrator}
+    C -->|Extracts| D[Base Message Score]
+    C -->|Evaluates| E[Punctuation & Caps Threat]
+    C -->|Calculates| F[Response Latency Anxiety]
+    C -->|Analyzes| G[Contextual History Vectors]
+    D --> H[Scoring Engine]
+    E --> H
+    F --> H
+    G --> H
+    H --> I[Overthinking Index]
+    H --> J[Interpretations & Alternate Universes]
+    I --> K[Results Dashboard]
+    J --> K
+```
 *The user inputs telemetry -> the engine calculates factors -> results dashboard displays a highly-engineered anxiety dossier.*
 
 ### Project Demo
