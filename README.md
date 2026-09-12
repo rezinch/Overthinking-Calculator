@@ -2,13 +2,14 @@
 
 # Overthinking Calculator 🎯
 
+**[🚀 Live Demo](https://overthinkingcalculator.vercel.app/)**
+
+
 ## Basic Details
-### Team Name: [Name]
+### Team Name: [Rezin's Team]
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: [REZIN] - [CUCEK]
 
 ### Project Description
 The Overthinking Calculator is a deterministic analysis tool that evaluates simple text messages and mathematically computes exactly how much you are overthinking them, generating thousands of unnecessary hypothetical scenarios.
@@ -43,14 +44,11 @@ npm run dev
 For Software:
 
 # Screenshots
-![Screenshot1](https://github.com/user-attachments/assets/8920b256-2ba8-4988-b824-5351134eb4bd)
-*The main landing page showing the aesthetic neo-brutalist design and global telemetry.*
+![Screenshot1](https://raw.githubusercontent.com/rezinch/Overthinking-Calculator/refs/heads/master/ss1.png)
 
-![Screenshot2](https://via.placeholder.com/1280x640.png?text=Forensic+Analysis+Form)
-*The Forensic Parameters step where you input message latency, punctuation threats, and capitalization.*
+![Screenshot2](https://raw.githubusercontent.com/rezinch/Overthinking-Calculator/refs/heads/master/ss2.png)
 
-![Screenshot3](https://via.placeholder.com/1280x640.png?text=Results+Dashboard)
-*The Results Dashboard displaying the Overthinking Index, Verdict, and generated Alternate Universes.*
+![Screenshot3](https://raw.githubusercontent.com/rezinch/Overthinking-Calculator/refs/heads/master/ss3.png)
 
 # Diagrams
 ```mermaid
