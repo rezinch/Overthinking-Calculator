@@ -72,20 +72,7 @@ graph TD
 ```
 *The user inputs telemetry -> the engine calculates factors -> results dashboard displays a highly-engineered anxiety dossier.*
 
-### Project Demo
-# Video
-[Add your demo video link here]
-*This video demonstrates a user inputting "okay." and receiving a 98% Overthinking Index with multiple red flags.*
 
-# Additional Demos
-[Add any extra demo materials/links]
-
-## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
-
----
 Made with ❤️ at TinkerHub Useless Projects 
 
 ![Static Badge](https://img.shields.io/badge/TinkerHub-24?color=%23000000&link=https%3A%2F%2Fwww.tinkerhub.org%2F)
